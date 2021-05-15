@@ -32,4 +32,9 @@ admin.delete('/deleteArticle/:id', require('./admin/deleteArticle'));
 // 更改头像
 admin.post('/editAvatar/:id', require('./admin/editAvatar'));
 
+// 添加曲谱
+admin.post('/addStaff', require('./admin/addStaff'));
+// 获取曲谱列表数据
+admin.get('/staffs', require('./admin/staffs'));
+
 module.exports = admin;

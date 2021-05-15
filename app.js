@@ -13,6 +13,8 @@ const app = express();
 
 // 数据库连接
 require('./model/connect');
+// 创建初始化曲谱
+// require('./model/staff'); 
 
 // 设置跨域
 app.all('*', function(req, res, next) {
