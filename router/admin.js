@@ -29,6 +29,7 @@ admin.get('/findArticleByUserId/:id', require('./admin/findArticleByUserId'));
 admin.put('/editArticle/:id', require('./admin/editArticle'));
 // 删除文章
 admin.delete('/deleteArticle/:id', require('./admin/deleteArticle'));
+
 // 更改头像
 admin.post('/editAvatar/:id', require('./admin/editAvatar'));
 
@@ -36,5 +37,13 @@ admin.post('/editAvatar/:id', require('./admin/editAvatar'));
 admin.post('/addStaff', require('./admin/addStaff'));
 // 获取曲谱列表数据
 admin.get('/staffs', require('./admin/staffs'));
+// 根据id查询曲谱信息
+admin.get('/findStaff/:id', require('./admin/findStaff'));
+// 根据userId查询曲谱信息
+admin.get('/findStaffByUserId/:id', require('./admin/findStaffByUserId'));
+// 修改曲谱
+admin.put('/editStaff/:id', require('./admin/editStaff'));
+// 删除曲谱
+admin.delete('/deleteStaff/:id', require('./admin/deleteStaff'));
 
 module.exports = admin;
